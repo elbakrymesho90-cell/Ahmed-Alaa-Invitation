@@ -1,7 +1,20 @@
-alert("Script Loaded");
-
 const openBtn = document.getElementById("openBtn");
+const music = document.getElementById("bgMusic");
+const welcomeScreen = document.getElementById("welcome-screen");
+const mainContent = document.getElementById("main-content");
 
-openBtn.onclick = function () {
-    alert("Button Works");
+openBtn.onclick = async function () {
+
+    alert("Button Clicked");
+
+    try {
+        await music.play();
+        alert("Music Started");
+    } catch (e) {
+        alert(e.message);
+        console.log(e);
+    }
+
+    welcomeScreen.style.display = "none";
+    mainContent.style.display = "block";
 };
