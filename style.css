@@ -22,10 +22,12 @@ background:linear-gradient(#4b0014,#2d000d);
 }
 
 h1{
-font-family:'Great Vibes',cursive;
-font-size:70px;
-color:#d4af37;
+font-family:'Cormorant Garamond',serif;
+font-size:72px;
+font-weight:600;
+letter-spacing:4px;
 text-transform:uppercase;
+color:#D4AF37;
 }
 
 .and{
