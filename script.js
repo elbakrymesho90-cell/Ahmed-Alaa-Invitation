@@ -74,3 +74,14 @@ document.addEventListener("click", () => {
 }, { once: true });
 
 updateMusicButton();
+const openBtn = document.getElementById("openBtn");
+const welcomeScreen = document.getElementById("welcome-screen");
+const mainContent = document.getElementById("main-content");
+const music = document.getElementById("bgMusic");
+
+openBtn.addEventListener("click", () => {
+    music.play();
+
+    welcomeScreen.style.display = "none";
+    mainContent.style.display = "block";
+});
