@@ -26,7 +26,7 @@ font-family: 'Playfair Display', serif;
 font-size:72px;
 font-weight:600;
 letter-spacing:4px;
-text-transform:capitlaize;
+text-transform:capitalize;
 color:#D4AF37;
 }
 
@@ -49,6 +49,10 @@ text-decoration:none;
 font-weight:bold;
 display:inline-block;
 margin-top:20px;
+}
+
+.music-btn{
+    margin-top:16px;
 }
 
 section{

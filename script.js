@@ -50,7 +50,27 @@ setInterval(countdown, 1000);
 // =========================
 
 const music = document.getElementById("music");
+const musicToggle = document.getElementById("music-toggle");
+
+function updateMusicButton() {
+    musicToggle.textContent = music.paused ? "Play Music" : "Pause Music";
+}
+
+musicToggle.addEventListener("click", event => {
+    event.stopPropagation();
+    if (music.paused) {
+        music.play().catch(() => {});
+    } else {
+        music.pause();
+    }
+    updateMusicButton();
+});
 
 document.addEventListener("click", () => {
-    music.play().catch(() => {});
+    if (music.paused) {
+        music.play().catch(() => {});
+        updateMusicButton();
+    }
 }, { once: true });
+
+updateMusicButton();
