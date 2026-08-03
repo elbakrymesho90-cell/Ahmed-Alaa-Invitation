@@ -1,82 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Ahmed & Alaa</title>
+    <title>Ahmed & Alaa</title>
 
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div id="welcome-screen">
-    <h1>Ahmed & Alaa</h1>
-    <button id="openBtn">Open Invitation</button>
-</div>
 
-<div id="main-content" style="display:none;">
+    <!-- Welcome Screen -->
 
-<div class="hero">
+    <div id="welcome-screen">
 
-<h3>Engagement Ceremony</h3>
+        <h1>Ahmed & Alaa</h1>
 
-<h1>Ahmed</h1>
+        <button id="openBtn">Open Invitation</button>
 
-<div class="and">&</div>
+    </div>
 
-<h1>Alaa</h1>
+    <!-- Main Invitation -->
 
-<p class="date">
-06 August 2026 • 8:00 PM
-</p>
+    <div id="main-content" style="display:none;">
 
-<a class="btn" href="#countdown">
-View Invitation
-</</div>
+        <section class="hero">
 
-<section id="countdown">
+            <h3>Engagement Ceremony</h3>
 
-<h2>Countdown</h2>
+            <h1>Ahmed</h1>
 
-<div id="timer"></div>
+            <div class="and">&</div>
 
-</section>
+            <h1>Alaa</h1>
 
-<section>
+            <p class="date">
+                06 August 2026 • 8:00 PM
+            </p>
 
-<h2>Venue</h2>
+            <a class="btn" href="#countdown">
+                View Invitation
+            </a>
 
-<p>
+        </section>
 
-Garden Of Police Club<br>
+        <section id="countdown">
 
-KFS
+            <h2>Countdown</h2>
 
-</p>
+            <div id="timer"></div>
 
-<a class="btn"
+        </section>
 
-target="_blank"
+        <section>
 
-href="https://maps.app.goo.gl/eGY13mXeNNwMg5SG7?g_st=ic">
+            <h2>Venue</h2>
 
-Open Map
+            <p>
+                Garden Of Police Club<br>
+                KFS
+            </p>
 
-</a>
+            <a class="btn"
+                target="_blank"
+                href="https://maps.app.goo.gl/eGY13mXeNNwMg5SG7?g_st=ic">
 
-</section>
+                Open Map
 
-<audio id="bgMusic" loop>
-  <source src="music.mp3" type="audio/mpeg">
-  Your browser does not support audio.
-</audio>
+            </a>
 
-<script src="script.js"></script>
-</div>
+        </section>
+
+    </div>
+
+    <!-- Music -->
+
+    <audio id="bgMusic" loop preload="auto">
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>
