@@ -6,94 +6,74 @@
 
 <title>Ahmed & Alaa</title>
 
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+<link rel="stylesheet" href="style.css">
 
-body{
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-background:#4b0008;
-background-image:radial-gradient(circle,#65000d,#3b0006);
-font-family:Georgia,serif;
-color:#e9c78b;
-}
-
-.card{
-width:90%;
-max-width:420px;
-padding:50px 30px;
-border:1px solid rgba(233,199,139,.4);
-text-align:center;
-border-radius:20px;
-background:rgba(0,0,0,.15);
-backdrop-filter:blur(8px);
-}
-
-h3{
-font-weight:normal;
-letter-spacing:3px;
-margin-bottom:20px;
-}
-
-h1{
-font-size:60px;
-font-style:italic;
-line-height:1.2;
-}
-
-span{
-display:block;
-font-size:40px;
-margin:15px 0;
-}
-
-p{
-margin-top:25px;
-font-size:18px;
-}
-
-button{
-margin-top:40px;
-padding:15px 35px;
-border:none;
-border-radius:40px;
-background:#d4af37;
-color:#4b0008;
-font-size:18px;
-cursor:pointer;
-font-weight:bold;
-}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<div class="card">
+<div class="hero">
 
-<h3>ENGAGEMENT</h3>
+<h3>Engagement Ceremony</h3>
 
-<h1>
-Ahmed
-<span>&</span>
-Alaa
-</h1>
+<h1>Ahmed</h1>
 
-<p>
-Thursday • 6 August 2026
+<div class="and">&</div>
+
+<h1>Alaa</h1>
+
+<p class="date">
+06 August 2026 • 8:00 PM
 </p>
 
-<button>
-Open Invitation
-</button>
+<a class="btn" href="#countdown">
+View Invitation
+</a>
 
 </div>
 
+<section id="countdown">
+
+<h2>Countdown</h2>
+
+<div id="timer"></div>
+
+</section>
+
+<section>
+
+<h2>Venue</h2>
+
+<p>
+
+Garden Of Police Club<br>
+
+KFS
+
+</p>
+
+<a class="btn"
+
+target="_blank"
+
+href="https://maps.app.goo.gl/eGY13mXeNNwMg5SG7?g_st=ic">
+
+Open Map
+
+</a>
+
+</section>
+
+<audio id="music" autoplay loop>
+
+<source src="music.mp3" type="audio/mpeg">
+
+</audio>
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
