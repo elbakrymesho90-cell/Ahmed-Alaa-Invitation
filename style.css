@@ -22,11 +22,11 @@ background:linear-gradient(#4b0014,#2d000d);
 }
 
 h1{
-font-family:'Cormorant Garamond',serif;
+font-family: 'Playfair Display', serif;
 font-size:72px;
 font-weight:600;
 letter-spacing:4px;
-text-transform:uppercase;
+text-transform:capitlaize;
 color:#D4AF37;
 }
 
