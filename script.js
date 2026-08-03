@@ -1,25 +1,17 @@
 const openBtn = document.getElementById("openBtn");
-const music = document.getElementById("bgMusic");
 const welcomeScreen = document.getElementById("welcome-screen");
 const mainContent = document.getElementById("main-content");
+const music = document.getElementById("bgMusic");
 
-openBtn.onclick = async function () {
-
-    alert("Button Clicked");
-
+openBtn.addEventListener("click", async () => {
     try {
-    await music.play();
-    alert("Music Started");
-} catch (e) {
-    alert(e.name + "\n" + e.message);
-    console.error(e);
-}
-        alert("Music Started");
+        await music.play();
+        console.log("Music started");
     } catch (e) {
-        alert(e.message);
-        console.log(e);
+        alert(e.name + " : " + e.message);
+        return;
     }
 
     welcomeScreen.style.display = "none";
     mainContent.style.display = "block";
-};
+});
